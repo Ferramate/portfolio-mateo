@@ -1,30 +1,181 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  height: 100vh;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 a {
-    color: #1e90ff;
-    text-decoration: none;
+  color: #1e90ff;
+  text-decoration: none;
 }
 
-li {
-    color: white;
+.logo-mateo {
+  width: 75px;
 }
 
-nav {
-    color: #333333 !important;
+/* Tarjetas de habilidades */
+
+.card img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Tarjetas de proyectos */
+
+.card-project {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-project img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #0d6efd;
+}
+
+.card-text {
+  color: #555;
+}
+
+.btn-custom {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #084fc2;
+}
+
+/* Formulario de contacto */
+
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+}
+
+.form-holder .form-content {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.form-content .form-items {
+  border: 3px solid #434444;
+  padding: 40px;
+  display: inline-block;
+  width: 100%;
+  min-width: 540px;
+  border-radius: 10px;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.form-content h3 {
+  color: #fff;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-content p {
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.form-content input[type="text"],
+.form-content input[type="password"],
+.form-content input[type="email"],
+.form-content select {
+  width: 100%;
+  padding: 9px 20px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #434444;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8d8d8d;
+  margin-top: 16px;
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  outline: none;
+  border: 0px;
+  box-shadow: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #495056;
+  box-shadow: none;
+}
+
+.form-content textarea {
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8d8d8d;
+  height: 120px;
+  transition: none;
+  margin-bottom: 14px;
+}
+
+.form-content textarea:hover,
+.form-content textarea:focus {
+  border: 0;
+  background-color: #ebeff8;
+  color: #8d8d8d;
 }
